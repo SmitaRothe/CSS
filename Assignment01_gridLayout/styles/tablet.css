@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* Smita Rothe   Student ID 2033453 */
+/* Created on 17th june 2020 */
+
+/* CSS document for the tablet device */
+body{
+    width: 100%;
+}
+
+.wrapper{
+    width: 80%;
+    max-width: 760px;
+    height: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1% 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax( 30px, auto);
+    column-gap: 2px;
+    border: 1px solid black;
+    border-style: groove;
+}
+.wrapper div{
+    font-size: small;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 35px;
+}
+.heading2{
+    text-align: center;
+    font-size: 22px;
+}
+.Side1 h3{
+    text-align: center;
+    font-size: 15px;
+}

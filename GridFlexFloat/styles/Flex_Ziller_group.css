@@ -1,0 +1,86 @@
+
+body{
+    width:80%;
+    margin: 0 auto;
+   
+}
+#container{
+    overflow: hidden;
+    border: 1px solid black;
+    border-style: groove;
+}
+header{
+    background-image: url(../images/blacktexture.jpg);
+}
+header h1{
+    text-align: center;
+    color: #FFF;
+}
+nav{
+    height: 40px;
+    background-color: gray;
+}
+nav ul{
+    padding: 5px;
+    list-style: none ;
+    text-align: center;
+}
+nav li{
+    padding: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: black;
+    color: #FFF;
+}
+nav li a{
+   text-decoration: none;
+   color: #FFF;
+}
+#section2{
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#section2 h2{
+    background-color: darkblue ;
+    color: #FFF;
+    text-align: center;
+}
+#section2 div{
+    flex-basis: 30%;
+    padding: 15px; 
+}
+div.right_border {
+    border-right: 5px solid lightblue;
+}
+#image{
+    display: block;
+    float: left;
+}
+footer{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: gray;
+}
+footer h4{
+    color: #FFF;
+}
+
+footer ul{
+    padding: 5px;
+    list-style: none;
+    text-align: center; 
+    display: inline;  
+}
+footer ul  li{
+    padding: 5px;
+    vertical-align: middle;
+    display:inline-block;
+    background-color: black;
+    color: #FFF;
+}
+footer li a {
+        text-decoration: none;
+        color: #FFF;
+ }

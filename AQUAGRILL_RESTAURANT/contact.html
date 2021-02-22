@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aquagrill showcases the finest in continental cuisine, complemented by
+    exceptional dining experience built on attension to every aspect of service, 
+   food and atmosphere. We have nice selection for appetizers, lunch, dinner and Desserts
+   to cater for every special occation. Contact us for more information about reservations, orders and information">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="styles/payment_address_contact.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <title>AquaGrill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="logo_div uk-text-center uk-grid">
+            <div class="uk-width-1-4"><img id="img_logo" src="images/logo.jpg" alt="Logo"></div>
+            <div class="uk-width-1-4">
+                <h1 id="logo">AquaGrill</h1>
+            </div>
+        </div>
+
+        <div class="nav_div uk-text-center uk-grid">
+            <div id="navigator" style="text-align: center;">
+                <div class="nav"><a class="active" href="home.html">Home</a></div>
+                <div class="nav"><a class="active" href="about_us.html">About</a></div>
+                <div class="nav"><a class="active" href="menu.html">Menu</a></div>
+                <div class="nav"><a class="active" href="orders.html">Orders</a></div>
+                <div class="nav"><a class="active" href="reservation.html">Reservations</a></div>
+                <div class="nav"><a class="active" href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+
+        <div class="uk-child-width-expand uk-grid-small uk-text-center uk-grid">
+            <div class="contact_us">
+                <h2 style="color:red;">Don't be a stranger</h2>
+                <h2>just say hello</h2>
+                <form id="contact_us" method="POST" action="thankyou.html" autocomplete="on">
+                    <table class="uk-table uk-table-divider uk-table uk-table-small uk-width-2xlarge">
+                        <tr>
+                            <td colspan="2">
+                                Feel free to get in touch with us. <br /> We are always open to take feedback and <br />
+                                make them oppurtunities for future developments.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-table-shrink">
+                                <label for="Name">Name*</label>
+                            </td>
+                            <td>
+                                <input type="text" id="Name" maxlength="33" size="50"
+                                    pattern="[a-zA-Z]+[ ][a-zA-Z]+{1,32}" name="firstName_lastName"
+                                    placeholder="Your Name" required="required" class="uk-input" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">E-mail Address*</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" size="50" maxlength="30" required="required"
+                                    placeholder="your_email@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    class="uk-input uk-table-shrink" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone number*</label> </td>
+                            <td>
+                                <input type="tel" id="phone" size="50" maxlength="10" required="required" name="phone"
+                                    pattern="^^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+                                    placeholder="(xxx) xxx-xxxx" class="uk-input" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">City*</label>
+                            </td>
+                            <td>
+                                <input type="text" id="city" size="50" maxlength="15" required="required"
+                                    placeholder="City" pattern="[A-Za-z]{1,15}" class="uk-input" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="feedback">Feedback*</label>
+                            </td>
+                            <td>
+                                <!--
+                    <textarea type="text" id="feedback" size="50" maxlength="300" required="required" placeholder="Message" minlength="30" style="height: 100px;" ></textarea>
+                    -->
+                                <textarea id="feedback" style="width: 100%;" rows="4" maxlength="150" minlength="30"
+                                required="required" class="inputs_background_color uk-textarea" placeholder="Your message..." ></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <fieldset>
+                                    <legend>Would you recommend our Restaurant:</legend>
+                                    <input type="radio" value="Yes" id="Yes" name="recommend" class="uk-input uk-radio">
+                                    <label for="Yes" class="uk-label">Yes</label>
+                                    <input type="radio" value="No" id="No" name="recommend" class="uk-input uk-radio">
+                                    <label for="No" class="uk-label">No</label>
+                                </fieldset>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" name="submit_feedback" id="submit_feedback" value="Submit"
+                                    class="uk-input" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Need help? <br />
+                                <a href="mailto:help@aquagrill.com">help@aquagrill.com</a>
+                            </td>
+                            <td>
+                                Feel like talking <br />
+                                +1 (514) 555 - 5555
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div>
+                    <h4>Find Us</h4>
+                    <p class="uk-text-italic">21 275 Lakeshore Road<br />Sainte-Anne-de-Bellevue, Québec<br />H9X 3L9
+                        Canada<br />
+                        <a
+                            href="https://www.google.com/maps/place/21275+Lakeshore+Dr,+Sainte-Anne-de-Bellevue,+QC+H9X+3L9/@45.4064036,-73.9439198,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc93845583f4869:0xf81ccc3a971d32b9!8m2!3d45.4064036!4d-73.9417311">Our
+                            Location on Map</a></p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class=" uk-child-width-expand uk-grid-small uk-text-center uk-grid">
+            <div class="box">
+                <footer class="footer uk-card uk-card-default uk-card-body">
+                    <div class="centerdiv">
+                        <a href="https://www.facebook.com/ContedJAC/?__tn__=%2Cd%3C-R&eid=ARBL-V5hH-8-VnBKpQpxohQUkJ640SQ1TsP7XiPH1hlNgnw7gzArOwrDfZFMBompI_4EyNuynz5vsZgb"
+                            target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/johnabbottstudents/?hl=en" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <h3 class="heading3 uk-card-title">Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

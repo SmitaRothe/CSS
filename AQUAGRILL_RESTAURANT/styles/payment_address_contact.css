@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*Developed by Mohammed, Naimish, Sergii, Smita 
+    Created in june 2020 */
+*{ font-size: 30px;}
+
+/*payment and address*/
+.main-container{
+    min-height: 750px;
+}
+.main{
+    padding: 50px 50px;
+    height: 450px;
+}
+/*payment and address*/
+
+
+/*contact us*/
+.contact_us h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+.contact_us{
+    border: 2px gray solid;
+    border-radius: 8px;
+}
+/*contact us*/

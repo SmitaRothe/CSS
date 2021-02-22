@@ -1,0 +1,160 @@
+@charset "UTF-8";
+    /*Developed by Mohammed, Naimish, Sergii, Smita 
+    Created in june 2020 */
+
+
+  /*order*/
+  #table_orders {
+    border: 1px solid black;
+    width: 60%;    
+}
+
+#table_orders tr, #table_orders tr th, #table_orders tr td{
+  border: 1px solid black;
+  height: 100px;
+}
+
+#tr_order, #td_order, #th_order{
+    border: 1px solid black;
+    height: 100px;}
+    
+    .inputs_background_color
+    { background-color: rgb(255, 255, 255); }
+
+    #compl_menu{
+      margin: 0 auto;
+      width: 350px;
+      height: 200px;
+      display: block;
+      text-align: left;
+      border: 1px solid black;
+    }
+    #table_orders img{
+      width: 100px;
+      height: 100px;
+    }
+    #table_orders img:hover {
+      transform: scale(1.4);
+    }
+    /*end order*/
+
+    
+    /* reservation*/
+*{font-size: 20px;}
+
+#reservation_pic{
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    object-fit: cover;
+}
+@media screen and (max-width:959px){
+    #main-container{ width:100%;}
+}
+/* reservation*/
+
+
+/*menu*/
+    .container{
+        max-width: 1500px;
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Img_box_menu{
+        flex: 1;
+        width: 400px;
+        height: 400px;
+    }
+    
+     .Img_box_menu .images{
+        width: 300px;
+        height: 300px;
+        border-width: 4px;
+        border: 4px solid #000;
+        border-radius: 10px;
+     }
+     .img_menu{
+         width: 300px;
+         height: 300px;
+         border-radius: 10px;
+     } 
+     .images:hover .img_menu{
+         transform: scale(1.2);
+     }
+     .images a{
+         text-decoration: none;
+     }
+    .centered{
+        font-size: 40px;
+        color: #000;
+    }
+    /*menu*/
+
+    /*Appetizers/desserts/lunch*/
+    .container{
+        max-width: 1500px;
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .Img_box{
+        position: relative;
+        margin: 20px 20px;
+        width: 400px;
+        height: 300px;
+        transform-style: preserve-3d;
+        transform: perspective(2000px);
+        transition: 1s;
+        justify-content: space-around;
+        border-radius: 15px; 
+        box-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b5b5b5,
+        0 5px 0 #aaa,
+        0 6px 0 #a5a5a5,
+        0 7px 3px rgba(0,0,0,0.6),
+        0 8px 4px rgba(0,0,0,0.8);
+    }
+    .Img_box:hover{ transform: perspective(2000px) rotate(-10deg); }
+    
+    .Img_box .images{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #000;
+        box-sizing: border-box;
+        transform-origin: left;
+        z-index: 1;
+        transition: 1s; 
+        border-radius: 15px;  
+    }
+    
+    .Img_box:hover .images{
+        transform: rotateY(-135deg);
+    }
+    .Img_box .images .img_menutype{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .Img_box .Ingredients{
+       position: absolute;
+       top: 0;
+       left: 0;
+       box-sizing: border-box;
+       padding: 20px;
+    }
+    
+  /*Appetizers/desserts/lunch*/
+

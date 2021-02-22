@@ -1,0 +1,76 @@
+
+
+body{
+    width: 80%;
+    font-size: 14;
+    color: #000;
+}
+#container{
+    margin: 20px auto;
+    background-image: url(../images/Tile.jpg);
+    width: 80%;
+}
+
+#divImg{
+    margin: 20px auto;
+    text-align: center; 
+}
+.align-center{
+    text-align: center;
+}
+.align-center img{
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;
+}
+hr{
+    height: 4px;
+    background-color: green;
+    border-style: groove;
+}
+.float-left-image-border{
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    border-color: maroon;
+    border-style: solid;
+    border-width: 5px;
+    float: left;
+}
+#main h2{
+    color: green;
+}
+#main h3{
+    color: maroon;
+    background-color: rgb(253, 191, 155);
+    display: inline;
+}
+#main h4{
+    padding: 3px 6px;
+    color:darkblue;
+    background-color: rgb(240, 128, 146);
+    display: inline;
+    border: 2px;
+    border-color: darkblue;
+    border-style: solid;
+    
+}
+
+#container ul{
+    list-style-image: url(../images/Tomato.gif);
+}
+h3  .clear-float {
+    display: none;
+ }
+.float-right-image-border{
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    border-color: maroon;
+    border-style: solid;
+    border-width: 5px;
+    float: right;
+}
+#main {
+        margin: 40px 20px;
+}

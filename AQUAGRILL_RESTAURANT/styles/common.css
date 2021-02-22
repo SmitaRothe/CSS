@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+   /*Developed by Mohammed, Naimish, Sergii, Smita 
+    Created in june 2020 */
+  html{
+    background-image: url("../images/fullbage_bg.png");
+  }
+  body{
+      width: 100%;    
+  }
+  #main-container{
+      width: 80%;
+      margin: 0 auto;
+      padding: 0px 40px;
+      box-shadow: rgb(51,51,51) 20px 0px 40px, rgb(51,51,51) -20px 0px 40px;
+      background-color:white;
+  }
+  
+  /* header and navigation */
+ #logo{
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      /*font-family: Edwardian Script ITC;*/
+      font-size:60pt;
+      margin-top: 5px;
+      text-shadow: 
+                 0 1px 0 #ccc,
+                 0 2px 0 #c5c5c5,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b5b5b5,
+                 0 5px 0 #aaa,
+                 0 6px 0 #a5a5a5,
+                 0 7px 3px rgba(0,0,0,0.6),
+                 0 8px 4px rgba(0,0,0,0.8);
+    }
+  #img_logo{
+      width: 130px;
+      height: 130px;
+  }
+  .nav a:hover{
+    background-color: rgb(51, 45, 45);
+    text-decoration: none;
+    color: white;
+  }
+  .nav a {
+    height: 25px;
+    margin: 25px;
+    background-color: rgb(29, 34, 34) ;
+    border-radius: 40px;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: x-large;
+      text-decoration: none;
+      box-shadow: 
+                 0 1px 0 #ccc,
+                 0 2px 0 #c5c5c5,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b5b5b5,
+                 0 5px 0 #aaa,
+                 0 6px 0 #a5a5a5,
+                 0 7px 3px rgba(0,0,0,0.6),
+                 0 8px 4px rgba(0,0,0,0.8);
+  }
+  #navigator{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .nav{
+    width: 16%;
+  }
+  .logo_div{
+    height: 70px;
+  }
+  .nav_div{
+    margin: 0px 40px;
+    height:auto;
+  }
+
+/* header and navigation end*/
+
+
+.footer{
+  height: 150px;
+    background-color:rgb(29, 34, 34) ;
+    border-radius: 4px;
+}
+.footer .heading3{
+    color: white;
+} 
+
+/*social media icons*/
+.centerdiv{
+  height: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerdiv a i{
+  font-size: 25px;
+  transition: all 0.5s linear;
+}
+.centerdiv a:hover i{transform: scale(1.5);}
+
+.centerdiv a{
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  line-height: 70px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+/*social media icons*/
+
+/* form icons */
+input:focus:required:invalid {
+  background-image:url("../icons/error.png");
+  background-repeat:no-repeat;
+  background-position:98% center;
+  background-color:lightgoldenrodyellow;
+}
+
+input:required:valid {
+  background-image: url("../icons/accept.png");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}
+
+input[type="email"]:focus:required:invalid {
+  background-image: url("../icons/email_error.png");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}
+/* form icons */
+
+
+@media screen and (max-width:959px){
+       #main_container{width: 100%;
+                       font-size: 30px;}
+        img{width: 100%;}  
+        .nav{ width: 32%; }
+        #logo{font-size:55pt;}
+      }
+
+@media screen and (max-width:640px){
+  #main_container{width: 100%;
+    font-size: 15px;}
+    .nav{ width: 32%; }
+    #logo{font-size:40pt;}
+    .nav_div{
+      margin: 0px 15px;
+      height:auto;}
+   .nav a {
+      height: 15px;
+      margin: 15px;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: medium;}
+  }
+
+ @media screen and (max-width:400px){
+  .nav_div{
+    margin: 0px 15px;
+    height:auto;}
+    .nav{ width: 100%; }
+  .nav a {
+    height: 15px;
+    margin: 15px;
+    border-radius: 10px;
+      padding: 5px;
+      font-size: medium;}
+ }

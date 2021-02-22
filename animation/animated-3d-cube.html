@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cube</title>
+    <link rel="stylesheet" href="styles/4-animated-3d-cube.css" />
+</head>
+
+<body>
+    <form action="#">
+        <input type="radio" id="front" name="transforms" value="front" />
+        <label for="front">Front</label>
+
+        <input type="radio" id="left" name="transforms" value="left" />
+        <label for="left">Left</label>
+
+        <input type="radio" id="right" name="transforms" value="right" />
+        <label for="right">Right</label>
+
+        <input type="radio" id="top" name="transforms" value="top" />
+        <label for="top">Top</label>
+
+        <input type="radio" id="bottom" name="transforms" value="bottom" />
+        <label for="bottom">Bottom</label>
+
+        <input type="radio" id="back" name="transforms" value="back" />
+        <label for="back">Back</label>
+
+        <div id="container">
+            <figure class="cube">
+                <div class="front">
+                    <img src="../images/canada-flag.png" alt="Canada Flag" title="Canada Flag"
+                    width="130" height="90" />
+                </div>
+                <div class="left">Left</div>
+                <div class="right">Right</div>
+                <div class="top">Top</div>
+                <div class="bottom">Bottom</div>
+                <div class="back">Back</div>
+            </figure>
+        </div>
+    </form>
+</body>
+
+</html>

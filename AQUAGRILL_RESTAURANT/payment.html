@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aquagrill showcases the finest in mixed cuisine, complemented by
+            exceptional dining experience built on attention to every aspect of service, 
+            food and atmosphere.We have nice selection for appetizers, lunch, dinner and Desserts to cater for every special occation.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="styles/payment_address_contact.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <title>AquaGrill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="logo_div uk-text-center uk-grid">
+            <div class="uk-width-1-4"><img id="img_logo" src="images/logo.jpg" alt="Logo"></div>
+            <div class="uk-width-1-4">
+                <h1 id="logo">AquaGrill</h1>
+            </div>
+        </div>
+
+        <div class="nav_div uk-text-center uk-grid">
+            <div id="navigator" style="text-align: center;">
+                <div class="nav"><a class="active" href="home.html">Home</a></div>
+                <div class="nav"><a class="active" href="about_us.html">About</a></div>
+                <div class="nav"><a class="active" href="menu.html">Menu</a></div>
+                <div class="nav"><a class="active" href="orders.html">Orders</a></div>
+                <div class="nav"><a class="active" href="reservation.html">Reservations</a></div>
+                <div class="nav"><a class="active" href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+
+        <div class="main uk-child-width-expand uk-grid-small  uk-grid">
+            <div>
+                <form id="online_payment_form" method="POST" action="thankyou.html" autocomplete="on">
+                    <table id="table_reservation">
+                        <tr>
+                            <td>
+                                <label for="payment_method">Payment Method</label>
+                            </td>
+                            <td>
+                                <select id="payment_method" class="uk-input-small">
+                                    <option value="visa">Visa</option>
+                                    <option value="Mastercard">Mastercard</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="name">Name *</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" size="20" maxlength="19" required="required"
+                                    class="uk-input-small" placeholder="Your Name" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="card_number">Card Number *</label>
+                            </td>
+                            <td>
+                                <input type="text" id="card_number" size="16" maxlength="16" required="required"
+                                    class="uk-input-small" pattern="^(\d{4}[- ]){3}\d{4}|\d{16}$"
+                                    placeholder="xxxx xxxx xxxx xxxx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Expiration Date *</label>
+                            </td>
+                            <td>
+                                <select class="uk-input-small">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <select class="uk-input-small">
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                </select>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="security_code">Security Code *</label>
+                            </td>
+                            <td>
+                                <input type="text" id="security_code" size="3" maxlength="3" required="required"
+                                    class="uk-input-small" pattern="^\d{3}$" placeholder="xxx" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="submit" value="Pay" class="inputs_background_color" />
+                            </td>
+                            <td>
+                                <input type="reset" class="inputs_background_color" />
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="img_container uk-child-width-expand uk-grid-small uk-text-center uk-grid">
+            <div class="box">
+                <footer class="footer uk-card uk-card-default uk-card-body">
+                    <div class="centerdiv">
+                        <a href="https://www.facebook.com/ContedJAC/?__tn__=%2Cd%3C-R&eid=ARBL-V5hH-8-VnBKpQpxohQUkJ640SQ1TsP7XiPH1hlNgnw7gzArOwrDfZFMBompI_4EyNuynz5vsZgb"
+                            target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/johnabbottstudents/?hl=en" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <h3 class="heading3 uk-card-title">Copyright © 2018 - 2020 AquaGrill Restaurant.</h3>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
